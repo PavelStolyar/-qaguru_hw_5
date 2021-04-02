@@ -6,7 +6,8 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class FindIssueTest_Selenide {
 
@@ -29,8 +30,5 @@ public class FindIssueTest_Selenide {
         //search issue by name
         $(byText(issueName)).click();
         $(".js-issue-title.markdown-title").shouldHave(text(issueName));
-
     }
-
-
 }
