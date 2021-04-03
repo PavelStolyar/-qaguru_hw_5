@@ -24,11 +24,10 @@ public class FindIssueTest_LambdaSteps {
         String tabName = "Issues";
         String issueName = "TestIssue";
 
-        step("Open repositoty in githab", () -> open(repositoryUrl));
+        step("Open repository in githab", () -> open(repositoryUrl));
         step("Open needed tab", () -> $(byText(tabName)).click());
         step("Search issue by name", () -> $(byText(issueName)).click());
-        step("Checked that needed issue is opened", () ->
+        step("Check that needed issue is opened", () ->
                 $(".js-issue-title.markdown-title").shouldHave(text(issueName)));
-
     }
 }
