@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-public class FindIssueTest_LambdaSteps {
+public class FindIssueTestLambdaSteps {
 
     @BeforeAll
     static void setup() {

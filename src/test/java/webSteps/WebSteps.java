@@ -24,6 +24,7 @@ public class WebSteps {
     public void openIssueByName(String issueName) {
         $(byText(issueName)).click();
     }
+
     @Step ("Check that {issueName} is opened")
     public void checkIssueByName(String issueName) {
         $(".js-issue-title.markdown-title").shouldHave(text(issueName));

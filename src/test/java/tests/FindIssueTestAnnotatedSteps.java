@@ -3,7 +3,7 @@ package tests;
 import org.junit.jupiter.api.Test;
 import webSteps.WebSteps;
 
-public class FindIssueTest_AnnotatedSteps {
+public class FindIssueTestAnnotatedSteps {
 
     private WebSteps steps = new WebSteps();
 
